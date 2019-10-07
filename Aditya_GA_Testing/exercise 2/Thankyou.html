@@ -1,0 +1,40 @@
+
+<html>
+    <head>
+            <script>
+                    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                    
+                    ga('create', 'UA-145461195-4', 'auto');
+
+                    ga('require', 'ec'); 
+
+                    ga('set', 'currencyCode', 'INR');
+
+
+
+
+                    ga('ec:setAction', 'purchase', {
+		  
+		  'affiliation': 'Google Store - Online',
+		  'revenue': '20',
+		  'tax': '2.85',
+		  'shipping': '5.345',
+		  'coupon': 'FLIP2019'    // User added a coupon at checkout.
+		});
+		ga('send', 'event', 'EnhancedEcommerce', 'Load', 'Transaction');
+
+		ga('send', 'pageview');
+                    </script>
+        <title>
+            Thank you
+        </title>
+    </head>
+    <body>
+        <h1>
+            Thank you
+        </h1>
+    </body>
+</html>

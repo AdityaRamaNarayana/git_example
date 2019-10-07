@@ -1,0 +1,46 @@
+<html>
+    <head>
+           <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P5P7HM9');</script>
+    <!-- End Google Tag Manager -->
+    <script>function onCheckout() {
+        dataLayer.push({
+          'event': 'checkout',
+          'ecommerce': {
+            'checkout': {
+              'actionField': {'step': 2,'option':'PaymentMode'},
+              'products': [{
+                
+                'paymentMode':'DebitCard',
+                        'cardDetails':'xxxxxx',
+                        'Address':'abc'
+             }]
+           }
+         },
+         'eventCallback': function() {
+            document.location = 'checkout.html';
+         }
+        });
+      }
+      </script>
+        <title>
+            CheckoutStepTwo
+        </title>
+    </head>
+    <body>
+        <h1>
+            Start Payment:
+        </h1>
+        <img src="bag.png" height="30%" width="20%"><br>
+        
+        
+        <h4>NET BANKING</h4><br>
+        <h4>CREDIT CARD</h4><br>
+        <h4>DEBIT CARD</h4><br>
+        <Button onclick="onCheckout()"> <a href="ThankyouGTM.html">Submit Payment</a></Button>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+    <head>
+           <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145461195-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  
+</script>
+
+
+<script>
+        function onCheckout() {
+    gtag('event', 'checkout_progress2', {
+      "items": [
+        {
+            'paymentMode':'DebitCard',
+                        'cardDetails':'xxxxxx',
+                        'Address':'abc'
+        }
+      ]
+      
+    });
+        }
+    gtag('config', 'UA-145461195-6');
+    
+    </script>
+        <title>
+            CheckoutStepTwo
+        </title>
+    </head>
+    <body>
+        <h1>
+            Start Payment:
+        </h1>
+        <img src="bag.png" height="30%" width="20%"><br>
+        
+        
+        <h4>NET BANKING</h4><br>
+        <h4>CREDIT CARD</h4><br>
+        <h4>DEBIT CARD</h4><br>
+        <Button onclick="onCheckout()"> <a href="ThankyouGtag.html">Submit Payment</a></Button>
+    </body>
+</html>

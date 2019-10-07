@@ -1,0 +1,48 @@
+<html>
+    <head>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145461195-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  
+</script>
+
+<script>
+    function onCheckout() {
+gtag('event', 'checkout_progress', {
+  "items": [
+    {
+      
+      "name": "Adidas Bag",
+      
+      "category": "Bags/Luggage",
+      "variant": "Black",
+      "list_position": 1,
+      "quantity": 2,
+      "price": '2.0'
+    }
+  ]
+  
+});
+    }
+gtag('config', 'UA-145461195-6');
+
+</script>
+        <title>
+            CheckoutStepOne
+        </title>
+    </head>
+    <body>
+        <h1>
+            Product details:
+        </h1>
+        <img src="bag.png" height="30%" width="20%"><br>
+        <h4>Product Name:Adidas Bag</h4><br>
+        <h4>Product Type:Bag</h4><br>
+        <h4>Product Price:$20</h4><br>
+        <Button onclick="onCheckout()"> <a href="checkoutTwoGtag.html">Paymentmode</a></Button>
+    </body>
+</html>

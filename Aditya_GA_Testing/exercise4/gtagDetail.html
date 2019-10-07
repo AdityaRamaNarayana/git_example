@@ -1,0 +1,63 @@
+<html>
+    <head>
+            
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145461195-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  
+</script>
+<script>
+gtag('event', 'view_item', {
+  "items": [
+    {
+      
+      "name": "Adidas Bag",
+      
+      "brand": "Adidas",
+      
+      "variant": "Black",
+      "category":"bags/luggage",
+      "quantity": 2,
+      "price": '2.0'
+    }
+  ]
+});
+function addToCart(){
+gtag('event', 'add_to_cart', {
+  "items": [
+    {
+     
+      "name": "Adidas Bag",
+      
+      "brand": "Adidas",
+      "category": "Bags/Luggage",
+      "variant": "Black",
+      
+      "quantity": 2,
+      "price": '2.0'
+    }
+  ]
+});
+}
+gtag('config', 'UA-145461195-6');
+</script>
+       
+        <title>
+           GTM Detail Page
+        </title>
+    </head>
+    <body>
+        <h1>
+            Product details:
+        </h1>
+        <img src="bag.png" height="30%" width="20%"><br>
+        <h4>Product Name:</h4><br>
+        <h4>Product Type:</h4><br>
+        <h4>Product Price:</h4><br>
+        <Button onclick="addToCart()" id="addCartbtn"> <a href="cartGtag.html">AddToCart</a></Button>
+    </body>
+</html>

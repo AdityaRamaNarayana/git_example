@@ -1,0 +1,63 @@
+<html>
+    <head>
+            
+
+
+        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P5P7HM9');</script>
+    <!-- End Google Tag Manager -->
+    <script>
+    dataLayer.push({
+        'ecommerce': {
+          'detail': {
+               // 'detail' actions have an optional list property.
+            'products': [{
+              'name': 'adidas bag',         // Name or ID is required.
+              
+              'price': '20',
+              'brand': 'adidas',
+              'category': 'Bag',
+              'variant': 'Blue'
+             }]
+           }
+         }
+      });
+ function addToCart(){
+      dataLayer.push({
+  'event': 'addToCart',
+  'ecommerce': {
+    'currencyCode': 'USD',
+    'add': {                                // 'add' actionFieldObject measures.
+      'products': [{                        //  adding a product to a shopping cart.
+        'name': 'adidas bag',         // Name or ID is required.
+              
+              'price': '20',
+              'brand': 'adidas',
+              'category': 'Bag',
+              'variant': 'Blue',
+        'quantity': 1
+       }]
+    }
+  }
+});
+}
+      </script>
+        <title>
+           GTM Detail Page
+        </title>
+    </head>
+    <body>
+        <h1>
+            Product details:s
+        </h1>
+        <img src="bag.png" height="30%" width="20%"><br>
+        <h4>Product Name:</h4><br>
+        <h4>Product Type:</h4><br>
+        <h4>Product Price:</h4><br>
+        <Button onclick="addToCart()" id="addCartbtn"> <a href="cartGTM.html">AddToCart</a></Button>
+    </body>
+</html>
